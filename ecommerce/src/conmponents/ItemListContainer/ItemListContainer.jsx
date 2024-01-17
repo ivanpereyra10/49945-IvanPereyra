@@ -6,7 +6,7 @@ const ItemListContainer = ({ greeting }) => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        // Utilizamos una función asincrónica dentro de useEffect
+        
         const fetchProducts = async () => {
             try {
                 const fetchedProducts = await getProducts();
@@ -16,9 +16,9 @@ const ItemListContainer = ({ greeting }) => {
             }
         };
 
-        // Llamamos a la función asincrónica
+        
         fetchProducts();
-        // Agregamos un arreglo vacío como segundo argumento para que useEffect se ejecute solo en el montaje inicial
+        
     }, []); 
 
     return (
