@@ -5,7 +5,6 @@ const Item = ({ id, name, img, category, price }) => {
             <img src={img} style={{ width: 200}}/>
             <p> Categoria:{category}</p>
             <h4>${price}</h4>
-            <button>Agregar</button>
         </article>
     )
 
